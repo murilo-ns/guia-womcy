@@ -1,1 +1,1 @@
-# guia-womcy
+# Minhas anotações sobre o Curso de Pentest Womcy
