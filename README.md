@@ -2,7 +2,7 @@
 
 ## 09/08 - Resumo
 
-## TCP/IP - conceitos básicos
+### TCP/IP - conceitos básicos
 O TCP é um protocolo orientado a objeto - confiável
 
 Funciona enviando 3 pacotes para abrir a comunicação o three way handshake e para finalizar a comunicação envia 4 pacotes
@@ -18,17 +18,17 @@ Algumas vezes ambos podem ser combinados exemplo chat e video em uma chamada do 
 
 Segue um exemplo de portas sobre cada um dos protocolos:https://pt.wikipedia.org/wiki/Lista_de_portas_dos_protocolos_TCP_e_UDP
 
-## Conexão via bind shell e reverse shell - NetCat
+### Conexão via bind shell e reverse shell - NetCat
 Pré-requisitos: Comandos básicos do linux
 
 Ajuda do netcat:
-```sh
+```
 nc -h
 ```
 
 Na aula de hoje comentamos o arquivo de interfaces /etc/network/interfaces
 Estando da seguinte maneira
-```sh
+```
 auto lo
 iface lo inet loopback
 
@@ -77,3 +77,11 @@ Sendo assim bem díficil de ser detectado tal
 Mais informações em: https://github.com/dantesilva/curso-tecnicas-pentest/blob/main/Bind-and-reverse-shell.md do mestre @dantesilva
   
 Em suma uma ferramenta do tipo canivete suíço, seja após um acesso na vítima realizado com sucesso ou como uma ferramenta no dia a dia, diante uma impossibilidade de acesso
+
+## 11/08 - Resumo
+
+### Wireshark
+Se trata de um analisador de protocolos, capturando na rede as informações trafegadas, uma espécie de Sniffer(como um cão farejador), estando entre as 5 melhores juntamente com o TCPDump e outras
+
+Ele pode ser executado tanto via terminal como no servidor gráfico. Um dos seus cores é a libpcap, tendo assim compatibilidades com demais ferramentas
+        
