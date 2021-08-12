@@ -81,25 +81,25 @@ Em suma uma ferramenta do tipo canivete suíço, seja após um acesso na vítima
 ## 11/08 - Resumo
 
 ### Wireshark
-        Se trata de um analisador de protocolos, capturando na rede as informações trafegadas, uma espécie de Sniffer(como um cão farejador), estando entre as 5 melhores juntamente com o TCPDump e outras
+Se trata de um analisador de protocolos, capturando na rede as informações trafegadas, uma espécie de Sniffer(como um cão farejador), estando entre as 5 melhores juntamente com o TCPDump e outras
 
-        Ele pode ser executado tanto via terminal como no servidor gráfico. Um dos seus cores é a libpcap, tendo assim compatibilidades com demais ferramentas
+Ele pode ser executado tanto via terminal como no servidor gráfico. Um dos seus cores é a libpcap, tendo assim compatibilidades com demais ferramentas
         
-        Iniciamos abrindo o Wireshark e selecionando a placa de rede de onde queremos capturar pacotes
-        ![image](https://user-images.githubusercontent.com/25257860/129117367-b89097a4-69be-4f37-bb59-06b5f5df1582.png)
+Iniciamos abrindo o Wireshark e selecionando a placa de rede de onde queremos capturar pacotes
+![image](https://user-images.githubusercontent.com/25257860/129117367-b89097a4-69be-4f37-bb59-06b5f5df1582.png)
         
-        Selecionamos assim a eth0 que é nossa placa configurada em uma rede NAT do virtualbox e tem acesso a internet
+Selecionamos assim a eth0 que é nossa placa configurada em uma rede NAT do virtualbox e tem acesso a internet
         
-        Para gerar tráfego de rede acessamos o Firefox e alguns sites, podendo assim observar as conexões do three way handshake
-        ![image](https://user-images.githubusercontent.com/25257860/129118655-8b6a70eb-64bc-45d4-a431-bfea271938c4.png)
+Para gerar tráfego de rede acessamos o Firefox e alguns sites, podendo assim observar as conexões do three way handshake
+![image](https://user-images.githubusercontent.com/25257860/129118655-8b6a70eb-64bc-45d4-a431-bfea271938c4.png)
         
-        ![image](https://user-images.githubusercontent.com/25257860/129119034-840d05be-b9a7-453e-9a81-2523e5ccf75e.png)
+![image](https://user-images.githubusercontent.com/25257860/129119034-840d05be-b9a7-453e-9a81-2523e5ccf75e.png)
 
-        Com o botão direito em uma das conexões, podemos clicar em follow e ver os detalhes
-        ![image](https://user-images.githubusercontent.com/25257860/129121930-ada531f8-af2e-4ba9-a9b7-0db8832577df.png)
+Com o botão direito em uma das conexões, podemos clicar em follow e ver os detalhes
+![image](https://user-images.githubusercontent.com/25257860/129121930-ada531f8-af2e-4ba9-a9b7-0db8832577df.png)
 
-        Exemplo de uma conexão ssh filtrando pela porta
-        ![image](https://user-images.githubusercontent.com/25257860/129122170-653846ae-7198-46f8-836b-d2575a59ce39.png) 
+Exemplo de uma conexão ssh filtrando pela porta
+![image](https://user-images.githubusercontent.com/25257860/129122170-653846ae-7198-46f8-836b-d2575a59ce39.png) 
         
-        encontrando assim uma vulnerabilidade expondo a versão do ssh
-        ![image](https://user-images.githubusercontent.com/25257860/129122206-27327636-fd91-4cc4-a6ca-b2abaee3dff9.png)
+encontrando assim uma vulnerabilidade expondo a versão do ssh
+![image](https://user-images.githubusercontent.com/25257860/129122206-27327636-fd91-4cc4-a6ca-b2abaee3dff9.png)
