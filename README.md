@@ -103,3 +103,60 @@ Exemplo de uma conexão ssh filtrando pela porta
         
 encontrando assim uma vulnerabilidade expondo a versão do ssh
 ![image](https://user-images.githubusercontent.com/25257860/129122206-27327636-fd91-4cc4-a6ca-b2abaee3dff9.png)
+
+##16/08 e 18/08 - Licença médica
+        
+##23/08 - alterada para 24/08 - não pude comparecer
+hash , criar , comparar, e sites que descriptografa os hash com listas pre salvas em banco de dados
+
+##25/08 - hashs e John the reaper, unshadow e hash identifier, tor
+       
+No arquivo /etc/passwd conseguimos ver todos os usuários cadastrados no linux
+![image](https://user-images.githubusercontent.com/25257860/130874145-ed8a438c-3443-49b2-b5e5-683c4c7daa3a.png)
+
+No arquivo /etc/shadow
+![image](https://user-images.githubusercontent.com/25257860/130874066-1569d304-6177-4316-9df7-a004113269a2.png)
+        
+Por mais que tenhamos duas senhas iguals em usuários diferentes o linux não gerará o mesmo hash devido ao componente de segurança cript por meio do uso do salt https://man7.org/linux/man-pages/man3/crypt.3.html
+
+Um algoritmo dentro do salt traz dois caracteres aleatórios e por meio desses é gerado o hash diferente dos demais
+![image](https://user-images.githubusercontent.com/25257860/130875174-a6a6122e-c4f0-4493-8771-ee7d4b68eeab.png)
+
+assim copiamos os arquivos citados, usando o unshadown e atraves do Jonh the reaper usando os arquivos foi possível encontrar as senhas mais faceis, pois o unshadow muda para a forma antiga que o linux gerava os hashs e assim trabalha em cima desses
+O unshadown junta os dois arquivos
+     
+unshadow passwd1 shadow1 > vitima
+        
+![image](https://user-images.githubusercontent.com/25257860/130878477-3ddc1406-73ad-4313-a538-d23b9c6b8652.png)
+
+  
+
+se vc quiser editar a lista padrão do John -> /usr/share/john/password.lst
+
+se quiser testar uma lista que vc criou -> --wordlist[=arquivoquevccriou]
+
+Conseguimos também descobrir o possível hash, no exemplo abaixo geramos com md5 e o hash identifier descobriu tal
+![image](https://user-images.githubusercontent.com/25257860/130878038-36c49f7e-bd63-4173-aebd-966936adafad.png)
+
+        
+Conceitos:
+surface web - aberta para todos entrar, sites normais
+        
+deep web - sites ou acessos a serviços não abertos a todos. Seu email, wpp, telegram, contas pessoais não abertas para a internet. Exemplo suas conversas não estão abertas a todos
+
+dark web - contem uma conexão com alto nível de criptografia. Acessível através do tor. Além de passar por diversos servidores em rotas diferentes, sendo praticamente impossível a rastreabilidade
+        
+temos o protocolo tor e o navegador tor.
+
+É recomendável sempre utilizar uma máquina virtual
+        
+fizemos a instalação do tor atraves de apt-get install tor torbrowser-launcher
+outra forma seria seguindo esse tutorial: https://techstart.xyz/linux/como-instalar-o-tor-no-kali-linux-apt/
+
+Se apresentar essa tela ao abrir e clicar em conect você já está navegando na darkweb
+![image](https://user-images.githubusercontent.com/25257860/130879753-cbb844df-ad4e-46dc-831c-08e61ac1b731.png)
+
+Os endereços são diferentes na darkweb, são maiores que os normais e não tem wwww, você poderá pesquisar sites da darkweb para localizar esses
+
+ex.:
+    https://darkweburls.com/#:~:text=People%20often%20refer%20to%20dark%20web%20urls%20as,that%20have%20their%20IP%20addresses%20hidden%20or%20masked
