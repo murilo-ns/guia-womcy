@@ -160,3 +160,35 @@ Os endereços são diferentes na darkweb, são maiores que os normais e não tem
 
 ex.:
     https://darkweburls.com/#:~:text=People%20often%20refer%20to%20dark%20web%20urls%20as,that%20have%20their%20IP%20addresses%20hidden%20or%20masked
+
+## 31/08 - 
+
+Há a diferença entre um trabalho de pentest e redteam. Ambos são executados com conhecimento da empresa, porém o red team ele é mais silencioso, ou seja, tentando executar ataques evitando ser detectado, com isso geralmente 
+Já no pentest, esse causa um maior ruído na rede sendo facilmente detectado.
+
+Realizamos o download e instalação do windows 10 pro, para que utiliza windows foi necessário realizar o download da ferramenta de downlod de mídia da microsoft em:
+https://www.microsoft.com/en-us/software-download/windows10ISO
+
+![image](https://user-images.githubusercontent.com/25257860/131585896-473944e1-c5d9-4695-bfcb-1bc14b217ef4.png)
+
+![image](https://user-images.githubusercontent.com/25257860/131585920-85714684-973c-4f6b-87e2-350acbd02faa.png)
+
+![image](https://user-images.githubusercontent.com/25257860/131585935-cdee1966-8408-48c5-800e-b247848dcc86.png)
+
+![image](https://user-images.githubusercontent.com/25257860/131585948-b556be6b-2d28-4fa7-968b-d9659ffac2db.png)
+
+![image](https://user-images.githubusercontent.com/25257860/131586017-b9d963d4-02e5-43d8-85ff-975af2026e6c.png)
+
+![image](https://user-images.githubusercontent.com/25257860/131586028-79192fe2-2b85-460e-a5d8-09fc2766ccc7.png)
+
+Assim logo após o download e verificação da máquina virtual, basta inserir essa no virtualbox e instalar
+        Recomendações: Tamanho do disco como 30gb dinamicamente alocado
+
+Configuramos assim após a instalação do windows a rede
+![image](https://user-images.githubusercontent.com/25257860/131590447-f1d9fc7d-0aaa-496e-a782-c6f73111d747.png)
+
+![image](https://user-images.githubusercontent.com/25257860/131590479-c47799d6-93d3-4d28-a7dd-1b56116d1590.png)
+
+![image](https://user-images.githubusercontent.com/25257860/131590890-fd812335-9ece-4492-ae97-6018d7716296.png)
+
+![image](https://user-images.githubusercontent.com/25257860/131592231-328ecd75-b4b6-4de9-bc86-94f3d2c43ac2.png)
