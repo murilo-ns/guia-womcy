@@ -192,3 +192,40 @@ Configuramos assim após a instalação do windows a rede
 ![image](https://user-images.githubusercontent.com/25257860/131590890-fd812335-9ece-4492-ae97-6018d7716296.png)
 
 ![image](https://user-images.githubusercontent.com/25257860/131592231-328ecd75-b4b6-4de9-bc86-94f3d2c43ac2.png)
+
+## 01/09 - Windows
+No windows são armazenados em SAM, NTDS.DIT e SYSTEM os hashs
+
+SAM - Security Account Manager - armazenda as contas de usuários
+
+NTDS.DIT(Em windows server) - armazena as do AD
+
+SYSTEM - necessário para descriptar o SAM/NTDS.DIT
+
+Ajuda: https://github.com/dantesilva/curso-tecnicas-pentest/blob/main/conceitos-senhas-windows.md
+
+Usamos a ferramenta metasploit: framwork que fornece ferramentas para o pentest, após conseguir o acesso e alcançar o objetivo do atacante
+Alguns conceitos sobre: https://github.com/dantesilva/curso-tecnicas-pentest/blob/main/Metasploit.md
+
+Tais como Exploit, payload, shellcode e module.
+        
+MSFVenom
+        
+Auxilia na criação de arquivos malicioso para envio ao alvo
+
+exemplo de comando
+![image](https://user-images.githubusercontent.com/25257860/131756222-b752b18b-501e-44fd-a1c5-4ce22ec63694.png)
+
+Baixamos o netcat no windows alvo
+https://joncraton.org/blog/46/netcat-for-windows/
+
+baixamos o arquivo no link indicado e descompactamos com a senha nc
+
+Executamos esse no prompt e ativamos o modo de escuta para transferir o arquivo do kali para o windows
+![image](https://user-images.githubusercontent.com/25257860/131757619-9c4ac852-4dea-4926-8a82-0bac71028989.png)
+
+No kali colocamos o comando:
+![image](https://user-images.githubusercontent.com/25257860/131757596-a8d048c7-3363-4363-830d-b4c555359732.png)
+
+
+Feito isso podemos finalizar a escuta e executar no kali o comando msfconsole
