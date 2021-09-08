@@ -229,3 +229,16 @@ No kali colocamos o comando:
 
 
 Feito isso podemos finalizar a escuta e executar no kali o comando msfconsole
+
+
+## 08/09 - Hashes no Windows
+Baseado em: https://github.com/dantesilva/curso-tecnicas-pentest/blob/main/NTLM.md
+
+O windows trabalha com dois padrões de autenticação LM e NTLM. Sendo que o primeiro era utilizado até o Windows Vista, é um padrão mais antigo. Ainda pode ser encontrado no Windows Server 2008.
+
+Conhecendo assim os dados dos sistema que rodam em uma localidade, facilitará o ataque.
+        
+O padrão NTLM, atualmente usado pelo Windows 10. É uma pacote de segurança fornecido pela Microsoft. Quando o cliente faz o login, ele gera uma hash e compara com aquela que ele tem gerada, de forma geral, esse é o seu funcionamento. Ele utiliza o conceito de handshake para a autenticação do usuário.
+Este é um padrão ao qual já está em seu fim de vida, mesmo sendo mais seguro que o LM. Por exemplo, se o usuário utilizar uma senha simples, a tendência será que mais fácil quebrar essa senha. Um exemplo de exploração que pode ser utilizado nesse é o man in the middle.
+
+Exemplo em prática: https://github.com/dantesilva/curso-tecnicas-pentest/blob/main/multi-handler.md
