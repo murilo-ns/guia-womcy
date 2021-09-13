@@ -242,3 +242,30 @@ O padrão NTLM, atualmente usado pelo Windows 10. É uma pacote de segurança fo
 Este é um padrão ao qual já está em seu fim de vida, mesmo sendo mais seguro que o LM. Por exemplo, se o usuário utilizar uma senha simples, a tendência será que mais fácil quebrar essa senha. Um exemplo de exploração que pode ser utilizado nesse é o man in the middle.
 
 Exemplo em prática: https://github.com/dantesilva/curso-tecnicas-pentest/blob/main/multi-handler.md
+
+
+## 13/09 - Pentest na web
+Documentação de apoio: https://github.com/dantesilva/curso-tecnicas-pentest/blob/main/Get-Post.md
+Falamos sobre os protocolo http, onde foi elucidado sobre os formularios Web. Os formulários são páginas para inserir dados s interagir com o site de alguma forma. Por exemplo inserimos as informações em um frontend, que manda a requisição para o backend, comunicando-se com o banco de dados.
+
+As informações são validadas e caso não cumpram os requisitos definidos na programação, é esperado que se retorne uma mensagem de erro.
+
+Também falamos sobre os métodos utilizados para os envios de informações, como GET, POST
+
+GET - O método tem como desvantagem a falta de proteção de dados. Transmite somente carcteres em texto puro ASCII. Não transmite audio ou vídeo. Ele insere dados na url
+
+POST - Este método envio dados no corpo da requisição HTTP. Recomendado para a transmissão de credenciais, por ser mais seguro
+
+SQL Injection
+Documento de apoio: https://github.com/dantesilva/curso-tecnicas-pentest/blob/main/SQLI.md
+
+Ataque que usa falhas em sites para modificar de alguma forma dados no banco SQL por meio de entradas disponíveis no site. Isso pode ocorrer de forma manual ou de forma automatizada.
+
+Realizamos testes com a ferramento mutillidae da owasp (https://github.com/webpwnized/mutillidae)
+Alguns indícios de falhas são:
+        Mensagens do site ao efetuar login dizendo que o usuário ou a senha são inválidos ao inserir somente o usuário ou somente uma senha
+        Analisar se é um site php, onde provavelmente estará usando mysql
+        informar caracteres especiais como aspas simples ou duplas
+        
+Ao inserir as aspas, por exemplo, o sistema acabou expondo a query do banco executada. Assim manipulamos a string utilizada com uma condição verdadeira.
+Ainda explorando com o login tentamos fazer enumeração nas tabelas de usuário e outras do sistema.
