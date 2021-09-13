@@ -261,7 +261,9 @@ Documento de apoio: https://github.com/dantesilva/curso-tecnicas-pentest/blob/ma
 
 Ataque que usa falhas em sites para modificar de alguma forma dados no banco SQL por meio de entradas disponíveis no site. Isso pode ocorrer de forma manual ou de forma automatizada.
 
-Realizamos testes com a ferramento mutillidae da owasp (https://github.com/webpwnized/mutillidae)
+Realizamos testes com a ferramenta mutillidae da owasp (https://github.com/webpwnized/mutillidae)
+Um sistema simulando várias vulnerabilidades apontadas na owasp para treino de desenvolvedores web e pentest
+
 Alguns indícios de falhas são:
         Mensagens do site ao efetuar login dizendo que o usuário ou a senha são inválidos ao inserir somente o usuário ou somente uma senha
         Analisar se é um site php, onde provavelmente estará usando mysql
@@ -269,3 +271,10 @@ Alguns indícios de falhas são:
         
 Ao inserir as aspas, por exemplo, o sistema acabou expondo a query do banco executada. Assim manipulamos a string utilizada com uma condição verdadeira.
 Ainda explorando com o login tentamos fazer enumeração nas tabelas de usuário e outras do sistema.
+
+Foi possível descobrir usuário, senhas e quantidades de linhas de uma tabela.
+        
+Através do Information_schema(esquema de informações) conseguimos buscar várias informações relacionadas entre uma tabela que sabemos que existe e com a tabela(information_schema) que guarda todas as tabelas existentes
+
+Em bancos de dados relacionais, o information schema segue o padrão ANSI e permite a leitura de todas as tabelas, views, colunas e procedimentos de um banco de dados.
+No caso do banco de dados MySQL que adota o padrão ANSI, e esse padrão diz que dentro do BD interno chamado information_schema, ele é capaz de referenciar todas colunas, nomes e tabelas de outros bancos que estão dentro do MySQL.
