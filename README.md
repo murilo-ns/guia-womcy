@@ -278,3 +278,8 @@ Através do Information_schema(esquema de informações) conseguimos buscar vár
 
 Em bancos de dados relacionais, o information schema segue o padrão ANSI e permite a leitura de todas as tabelas, views, colunas e procedimentos de um banco de dados.
 No caso do banco de dados MySQL que adota o padrão ANSI, e esse padrão diz que dentro do BD interno chamado information_schema, ele é capaz de referenciar todas colunas, nomes e tabelas de outros bancos que estão dentro do MySQL.
+
+## 15/09 - Engenharia social
+Foram apresentados exemplos de ataques que ocorreram com engenharia social e ferramentas
+
+Também foram apresentados exemplos de relatórios
